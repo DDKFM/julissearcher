@@ -13,14 +13,29 @@
 </head>
 <body>
     <div class="row">
-        <div class="col s12">
-          <div class="row">
-            <div class="input-field col s12">
-              <i class="material-icons prefix">textsms</i>
-              <input type="text" id="autocomplete-input" class="autocomplete">
-              <label for="autocomplete-input">Autocomplete</label>
-            </div>
-          </div>
+        <div class="col s1">
+                <div class="preloader-wrapper small active" id="loading" style="visibility: hidden">
+                        <div class="spinner-layer spinner-green-only">
+                          <div class="circle-clipper left">
+                            <div class="circle"></div>
+                          </div><div class="gap-patch">
+                            <div class="circle"></div>
+                          </div><div class="circle-clipper right">
+                            <div class="circle"></div>
+                          </div>
+                        </div>
+                      </div>
+        </div>
+        <div class="input-field col s8">
+                <i class="material-icons prefix">textsms</i>
+                <input type="text" class="autocomplete" id="text">
+                <label for="autocomplete-input">Autocomplete</label>
+        </div>
+        <div class="col s3">
+            <a class="waves-effect waves-light btn" onclick="sendRequest()" style="margin-top: 15px">
+                <i class="material-icons right">touch_app</i>
+                Generieren
+            </a>
         </div>
     </div>
     <div class="row">
